@@ -4,3 +4,4 @@
 # --trusted-host 20.78.193.63
  
 flask
+requests
