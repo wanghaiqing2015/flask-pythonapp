@@ -1,3 +1,5 @@
+
+import os
 from flask import Flask
 
 
@@ -5,7 +7,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    
+    ip = os.environ.get('ip','没有找到ip地址')
+    
+    return "ip: {}".format(ip)
 
 
 if __name__ == "__main__":
