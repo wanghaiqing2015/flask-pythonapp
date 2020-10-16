@@ -1,0 +1,6 @@
+# --index-url https://mirrors.aliyun.com/pypi/simple/
+
+# --index-url http://20.78.193.63:10088/pypi/simple/
+# --trusted-host 20.78.193.63
+ 
+flask
