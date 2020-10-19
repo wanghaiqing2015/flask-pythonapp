@@ -9,15 +9,15 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     
-    ip = os.environ.get('ip','127.0.0.1')
+    url = os.environ.get('url','127.0.0.1')
     
     try:
-        r = requests.get('http://{}'.format(ip))
+        r = requests.get('http://{}'.format(url))
         text=r.text
     except Exception as e:
         text='----------'
  
-    return "ip: {ip}  {text}".format(ip=ip, text=text)
+    return "url: {url}  {text}".format(url=url, text=text)
 
 
 if __name__ == "__main__":
